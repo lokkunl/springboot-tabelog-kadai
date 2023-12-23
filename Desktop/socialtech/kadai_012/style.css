@@ -1,0 +1,523 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+/*================
+PC用のスタイル 
+=================*/
+/* 横幅設定 */
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ナビゲーションのレイアウト */
+#nav-pc {
+  text-align: right;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc>a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+#nav-pc>a:link {
+  color: #0d0d0d;
+}
+
+#nav-pc>a:visited {
+  color: #0d0d0d;
+}
+
+#nav-pc>a:hover {
+  color: #0d0d0d;
+  text-decoration: underline;
+}
+
+#nav-pc>a:active {
+  color: #0d0d0d;
+}
+
+/* メインビジュアル*/
+#main-visual {
+  position: relative;
+  height: 400px;
+}
+
+#main-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2710d5;
+  color: #ffffff;
+  border-radius: 0 0 476px 0;
+  max-width: 620px;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+}
+
+#main-message>h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 100px 0 0 50px;
+}
+
+#main-message>p {
+  font-size: 28px;
+  margin: 0 0 0 50px;
+}
+
+#main-visual>img {
+  max-width: 620px;
+  border-radius: 476px 0 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* 見出し */
+h2 {
+  margin: 40px 0 0 0;
+}
+
+h2::after {
+  content: url("images/line.png");
+  margin-left: 10px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+/* ミッション */
+#mission {
+  margin: 80px auto 80px auto;
+  width: 100%;
+}
+
+#mission-flex {
+  width: 100%;
+  display: flex;
+}
+
+#mission-flex>div {
+  width: 50%;
+  margin: 20px;
+}
+
+#mission-photo {
+  width: 100%;
+}
+
+#s2dgs {
+  margin-top: 50px;
+}
+
+/* プロダクト */
+#product {
+  background-color: #fafafa;
+  width: 100%;
+  margin: 80px 0 80px 0;
+  padding: 10px 40px 0px 40px;
+}
+
+/* 外枠 */
+#product>div {
+  margin-top: 40px;
+  display: flex;
+}
+
+/* 左のカラム */
+#product-left {
+  width: 50%;
+  margin-right: 20px;
+}
+
+/* 右のカラム */
+#product-right {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+/* 画像＋説明の枠 */
+#product-left>div {
+  position: relative;
+  height: 480px;
+  margin-right: 20px;
+}
+
+#product-right>div {
+  position: relative;
+  height: 480px;
+  margin-left: 20px;
+}
+
+/* 画像 */
+.product-photo {
+  width: 100%;
+}
+
+/* 説明文の枠 */
+.product-explain {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 280px;
+  margin: 0 40px 0 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 説明文の英語 */
+.product-explain>span {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* 説明文の見出し */
+.product-explain>h3 {
+  margin: 5px 0 5px 0;
+}
+
+/* 説明文 */
+.product-explain>p {
+  margin: 0;
+}
+
+/* 「もっとみる」ボタン */
+#product-more {
+  margin: 0 auto -42px auto;
+}
+
+/* ABOUT US */
+#aboutus {
+  margin: 80px auto 80px auto;
+}
+
+/* 3つの組織文化と画像を入れる枠 */
+#aboutus>div {
+  display: flex;
+}
+
+/* 画像 */
+.culture-img {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.culture-img2 {
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* 3つの組織文化の表 */
+.culture-table {
+  max-width: 500px;
+  margin-right: 50px;
+}
+
+/* 番号 */
+.culture-num {
+  font-size: 80px;
+  color: #2710d5;
+  margin: 0 20px 0 0;
+}
+
+/* 組織文化英語 */
+.culture-en {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+}
+
+/* 組織文化日本語 */
+.culture-jp {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* 説明文 */
+.culture-description {
+  margin: 0;
+}
+
+/* ビジョン */
+#vision {
+  margin: 80px auto 80px auto;
+}
+
+/* セクション内の外枠 */
+#vision>div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* 7つの行動指針の枠 */
+.vision-box {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.vision-box>img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.vision-box>span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 31;
+  margin-right: 20px;
+}
+
+.vision-box>span>h4 {
+  color: #2710d5;
+  font-size: 19px;
+  margin: 80px 0 0 0;
+  }
+
+.vision-box>span>h4::first-letter {
+  font-size: 40px;
+}
+
+.vision-box>span>h5 {
+  font-size: 20px;
+  margin: 0 0 0 0;
+}
+
+.vision-box>span>p {
+  margin: 10px 0 0 0;
+}
+
+/* 会社概要 */
+#company {
+  margin: 80px auto 80px auto;
+}
+
+#company-table {
+  width: 100%;
+}
+
+.tableheader {
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  width: 100px;
+}
+
+.tableheader-first {
+  text-align: left;
+  padding: 20px;
+  border-bottom-color: #2710d5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #2710d5;
+  border-top-width: 1px;
+  border-top-style: solid;
+  width: 100px;
+}
+
+.cell {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.cell-first {
+  padding: 30px;
+  border-bottom-color: #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: #ececec;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+#company>iframe {
+  width: 100%;
+  height: 368px;
+  margin-top: 40px;
+}
+
+/* お問い合わせ */
+#contact {
+  margin: 80px auto 80px auto;
+}
+
+/* 外枠 */
+#contact>form>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+/* 左列の見出し */
+.contact-heading {
+  width: 240px;
+  align-self: center;
+}
+
+/* 見出しのラベル */
+.contact-label {
+  font-weight: bold;
+}
+
+/* 必須 */
+.contact-span {
+  color: #ce2222;
+  margin: 0 0 0 20px;
+  font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 56px;
+}
+
+/* お問い合わせ内容のテキストエリア */
+.contact-textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: #707070;
+  border-bottom-style: solid;
+  background-color: #fafafa;
+  width: 400px;
+  height: 200px;
+}
+
+/* 個人情報の取り扱い */
+details {
+  width: 700px;
+}
+
+details>div {
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+details>div>span {
+  font-weight: bold;
+}
+
+/* フッター */
+footer {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+
+#footer-logo {
+  margin-bottom: 30px;
+}
+
+#footer-link {
+  margin-bottom: 50px;
+}
+#footer-link > a {
+  text-decoration: none;
+  margin: 10px;
+}
+#footer-link > a:link {
+  color: #ffffff;
+}
+#footer-link > a:visited {
+  color: #ffffff;
+}
+#footer-link > a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+#footer-link > a:active {
+  color: #ffffff;
+}
+
+#sns-footer {
+  text-align: left;
+  width: 100%;
+}
+
+#sns-footer > a {
+  margin-right: 30px;
+}
+
+#copyright {
+  color: #ffffff;
+  float: right;
+}
+
+/* cases */
+#cases{
+  margin: 40px 0 40px 0;
+  width: 100%;
+}
+ul{
+  display: flex;
+  list-style: none
+}
+li{
+  width: 33%;
+  margin: 20px;
+}
+.case-card{
+  background-color: #ffffff;
+  min-height: 400px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2)
+}
+.case-img{
+  width: 100%;
+}
+.case-info{
+  padding: 10px 20px 10px 20px;
+}
+.case-name{
+  color: #2710d5;
+  font-size: 19px;
+}
+.case-content{
+  font-size: 14px;
+}
